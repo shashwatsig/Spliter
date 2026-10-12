@@ -82,9 +82,6 @@
   </tr>
 </table>
 
-> [!TIP]
-> **To add your own screenshots**: Save your screenshot images inside `public/screenshots/` with names matching `dashboard.png`, `expense-split.png`, `group-ledger.png`, and `settlement.png`. They will automatically render in the table above!
-
 ---
 
 ## ✨ Features
