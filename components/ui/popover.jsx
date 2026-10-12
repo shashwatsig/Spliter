@@ -11,9 +11,19 @@ function Popover({
 }
 
 function PopoverTrigger({
+  asChild,
+  children,
   ...props
 }) {
-  return <PopoverPrimitive.Trigger data-slot="popover-trigger" {...props} />
+  return (
+    <PopoverPrimitive.Trigger
+      data-slot="popover-trigger"
+      render={asChild ? children : props.render}
+      {...props}
+    >
+      {!asChild ? children : undefined}
+    </PopoverPrimitive.Trigger>
+  )
 }
 
 function PopoverContent({
