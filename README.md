@@ -18,6 +18,12 @@
   </p>
 
   <p>
+    <a href="https://spliter-umber.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_Splitr-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+    </a>
+  </p>
+
+  <p>
     <img src="https://img.shields.io/badge/Next.js-16.3-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
     <img src="https://img.shields.io/badge/Convex-Backend-orange?style=for-the-badge&logo=convex&logoColor=white" alt="Convex" />
@@ -188,7 +194,7 @@ Ensure you have the following installed on your machine:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/spliter.git
+git clone https://github.com/shashwatsig/Spliter.git
 cd spliter
 ```
 
@@ -217,6 +223,7 @@ Fill in your API keys in `.env.local`:
 CONVEX_DEPLOYMENT=dev:your-deployment-name
 NEXT_PUBLIC_CONVEX_URL=https://your-deployment.convex.cloud
 NEXT_PUBLIC_CONVEX_SITE_URL=https://your-deployment.convex.site
+CONVEX_DEPLOY_KEY=prod:... # (Optional for dev, required for production builds / Vercel)
 
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
