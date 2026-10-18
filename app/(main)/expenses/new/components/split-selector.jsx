@@ -148,7 +148,7 @@ export function SplitSelector({
 
           {type === "equal" && (
             <div className="text-right text-sm">
-              ${split.amount.toFixed(2)} (
+              ₹{split.amount.toFixed(2)} (
               {split.percentage.toFixed(1)}%)
             </div>
           )}
@@ -183,7 +183,7 @@ export function SplitSelector({
                 />
                 <span className="text-sm text-muted-foreground">%</span>
                 <span className="text-sm ml-1">
-                  ${split.amount.toFixed(2)}
+                  ₹{split.amount.toFixed(2)}
                 </span>
               </div>
             </div>
@@ -193,7 +193,7 @@ export function SplitSelector({
             <div className="flex items-center gap-2 flex-1">
               <div className="flex-1" />
               <div className="flex gap-1 items-center">
-                <span className="text-sm text-muted-foreground">$</span>
+                <span className="text-sm text-muted-foreground">₹</span>
                 <Input
                   type="number"
                   min="0"
@@ -221,7 +221,7 @@ export function SplitSelector({
               !isAmountValid ? "text-amber-600" : ""
             }`}
           >
-            ${totalAmount.toFixed(2)}
+            ₹{totalAmount.toFixed(2)}
           </span>
 
           {type !== "equal" && (
@@ -244,8 +244,8 @@ export function SplitSelector({
 
       {type === "exact" && !isAmountValid && (
         <div className="text-sm text-amber-600 mt-2">
-          The sum of all splits (${totalAmount.toFixed(2)}) should equal
-          the total amount (${amount.toFixed(2)}).
+          The sum of all splits (₹{totalAmount.toFixed(2)}) should equal
+          the total amount (₹{amount.toFixed(2)}).
         </div>
       )}
     </div>

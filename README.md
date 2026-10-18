@@ -96,8 +96,8 @@
 - **🧮 3 Split Topologies**:
   - **Equal**: Automatic division with floating-point tolerance handling.
   - **Percentage**: Dynamic percentage adjustment ensuring splits total 100%.
-  - **Exact Amounts**: Specify exact dollar amounts per person with total verification.
-- **🔄 Pairwise Debt Netting**: Smart matrix ledger algorithm eliminates redundant circular debts (if A owes B $20 and B owes A $5, the ledger consolidates to A owes B $15).
+  - **Exact Amounts**: Specify exact rupee amounts per person with total verification.
+- **🔄 Pairwise Debt Netting**: Smart matrix ledger algorithm eliminates redundant circular debts (if A owes B ₹20 and B owes A ₹5, the ledger consolidates to A owes B ₹15).
 - **📊 Spending Analytics Dashboard**: Interactive monthly spending bar charts powered by **Recharts**, tracking Year-to-Date totals and categorized expenditures.
 - **🤖 AI Monthly Spending Insights**: Scheduled background workflow ([Inngest](https://www.inngest.com)) aggregates monthly expenditures and leverages **Google Gemini AI** to produce personalized financial advice delivered directly via email.
 - **⏰ Automated Payment Reminders**: Daily Inngest cron scans pending 1-on-1 debts and dispatches styled HTML reminder emails via **Resend**.

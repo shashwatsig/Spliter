@@ -314,14 +314,18 @@ export function ExpenseForm({
           <div className="space-y-2">
             <Label htmlFor="amount">Amount</Label>
 
-            <Input
-              id="amount"
-              placeholder="0.00"
-              type="number"
-              step="0.01"
-              min="0.01"
-              {...register("amount")}
-            />
+            <div className="relative">
+              <span className="absolute left-3 top-2.5 text-muted-foreground">₹</span>
+              <Input
+                id="amount"
+                placeholder="0.00"
+                type="number"
+                step="0.01"
+                min="0.01"
+                className="pl-7"
+                {...register("amount")}
+              />
+            </div>
 
             {errors.amount && (
               <p className="text-sm text-red-500">
